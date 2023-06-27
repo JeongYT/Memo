@@ -1,0 +1,27 @@
+CSS3 레이아웃 3번 
+
+ezenmr.step.or.kr
+
+픽사베이 - 이미지 동영상 무료
+
+.swiper-button-prev{
+배경이미지처리
+}
+.swiper-button-prev:after{
+content:''; display:none;
+}
+
+javascript
+window.open();
+
+이름,이메일
+보내실말씀 -> 키워드를 적고
+
+구글이나,네이버,다음에 검색어로 검색하게하기
+
+인터넷 주소창에 url을 입력했을때  어떤 현상이 일어나는가?
+우리가 마우스로 클릭을 하거나 주소창에 URL이나 URI를 입력하는 순간,
+서버에 request가 발생이 되며, 서버는 그 request를 통해, response객체를
+통해서 클라이언트에 응답을 주게 된다.
+클릭은 request객체에 요청하는것이다.
+화면에 보여지게 되면 response객체가 클라이언트로 데이터를 전송하게 됩니다.

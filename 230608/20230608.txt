@@ -1,0 +1,49 @@
+ajax
+
+폼
+
+document.폼이름.입력양식이름.value.length
+
+nodejs
+node module git ignore
+npm
+yarn
+패키지 모듈설치
+node_modules/
+
+
+-----node -v 입력시 오류 발생하면 해야할일!------
+컨트롤 시프트 p
+terminal:select default profile
+command prompt
+vs-code 재실행
+node -v입력시 버젼이 떠야한다.
+-----------------------------------------------------
+
+node.js 프로젝트 초기화
+npm init
+
+node test.js
+
+.gitignore 파일 만들어서 node_modules/ 작성
+-> 깃허브에 쓸데없는 파일 안올라가게 하기위함
+
+cls -> 터미널 초기화
+
+npm install request
+
+-----------------------------------------------------------
+jQuery
+
+html 읽고 컨텐츠 설정하는 방법
+
+정적인 컨텐츠이고,
+클릭했을때 추가된 동적인 컨텐츠
+
+이벤트를 연결하면
+동적인 컨텐츠는 연결이 안된다.
+delegate방식을 사용해야 한다.
+
+
+
+

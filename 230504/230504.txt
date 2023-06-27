@@ -1,0 +1,70 @@
+transform 관련 응용예제
+
+3D관련 응용예제
+캐러셀- 회전목마
+
+동작원리
+보는화면 - viewport
+회전박스 - wheel
+세부박스 - item? box
+
+d-flex
+style="disply:flex"
+
+조건부주석
+<!--[if lt IE 9]>
+IE9보다 버전이 낮으면
+lt -> less than
+gt -> great dan
+
+html5shiv 
+-> HTML5에 새로추가된 시만텍 태그를 구버전에도 인식하게 해주는 라이브러리
+respond 
+-> 구버전에서 반응형웹 구현
+
+대상주식회사
+전체화면 동영상재생(풀스크린)
+
+left:0; right:0 ->witdh:100%
+top:0; bottom:0 -> height:100%
+left:0; right:0; top:0; bottom:0; -> width:100%, height:100%
+
+object-fit:fill/cover
+
+이벤트가 반응하는 영역과 css가 적용되는 영역은 다를 수 있다.
+
+HTML태그 -> 엘리먼트 요소
+자바스크립트 DOM -> Node(노드)
+태그노드, 텍스트노드
+<h1>welcome</h1>
+태그 엘리먼트, 텍스트 엘리먼트
+h1 -> 부모노드 
+welcome -> 자식노드
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

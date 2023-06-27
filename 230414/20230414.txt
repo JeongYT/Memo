@@ -1,0 +1,214 @@
+table -> 웹사이트의 전체의 layout 잡는 용도
+표 용도 -> 게시판의 글목록은 테이블로 제작
+
+tr -> table row
+td -> table date
+th -> table header
+
+table태그에 자식태그로 들어가는 태그들
+thead tr th td
+tbody tfoot
+caption
+colgroup
+col
+
+caption태그는 보통 숨김처리를 한다.
+th -> 굵은 글자, 가운데 정렬
+td -> 보통 글자, 왼쪽 정렬
+
+table 태그에 들어가는 속성들
+cellspacing
+cellpadding
+rowspan
+colspan
+scope
+width,height
+valign -> top middle bottom -> 수직정렬
+align -> left center right -> 수평정렬
+
+속성이 빨간색이면 웹표준이 아니고 
+나중에 CSS로 처리해라라고 생각
+
+cellspacing -> 글자와 셀 사이의 간격
+cellpadding -> 셀과 셀 사이의 간격
+
+https://validator.w3.org/
+
+scope 속성
+웹접근성을 위한 속성
+장애인용
+시각장애인, 한손만있으신분
+청각장애인
+색대비, 스크린리더가 친절하게 정보를 알려주게해야한다.
+
+emmet 기능
+extention -> html wrap
+htmltagwrap -> alt + w
+
+멀티미디어 관련 태그
+
+전통적방식 - 레거시방식
+embed, object
+
+html5에 새로추가된 태그
+video audio
+controls, muted 
+
+비디오,오디오파일은 자동재생을 막아놨다.
+동영상 자동재생이 되려면 muted가 필수적으로 들어가야한다.
+controls autoplay 만 작성하게 되면 자동재생 되지않는다.
+controls autopaly muted 까지 다써야 자동재생 실행된다.
+
+브라우저마다 지원되는 파일형식이 다르다.
+video -> mp4, ogv, webm(구글)
+
+type 속성을 추가하면 브라우저가 타입을 알 수 있다. 
+추가하지 않으면 브라우저가 무슨 타입인지 분석한다.
+
+poster -> 동영상 시작전 보여지는 사진 첨부
+poster 사용하려면 자동재생이 되지 않게 해야함!
+
+audio -> mp3, ogg, wav
+
+audio나 video 태그에 
+source태그를 여러개 넣은 이유는 
+브라우져마다 지원되는 형식이 달라서 똑같은 영상일 경우 파일형식을
+달리해서 크로싱브라우징을 높인것이다.
+
+영상의 개수는 video 태그의 개수
+------------------------------------------------
+유튜브나 판도라tv에서 
+영상소으의 링크 복사해서 붙여넣기
+영상 검색 -> 공유 -> 퍼가기
+
+allowfullscreen -> 전체화면 가능
+
+frame 태그는 비표준
+
+iframe -> inline frame
+문서에 또다른 문서를 삽입하는 기능
+영상재생용으로 요즘 많이 사용
+
+
+
+
+1) 알드라이브 검색 다운받고 설치
+2) dothome.co.kr 회원가입해서 무료웹호스팅 신청
+3) 알드라이브로 닷홈서버에 올려서 테스트하기
+
+알FTP -> File transfer protocol
+파일 전송 프로토콜
+파일질라
+
+기본도메인정보
+자기아이디.dothome.co.kr
+
+웹서버IP를 복사
+112.175.184.61	
+
+알드라이브 실행 -> 추가 -> 호스트/ID/PW 입력 -> 연결
+
+/ -> html 폴더에 파일을 올리기
+
+wjddusxo207.dothome.co.kr/0414_table.html 열기
+
+폼을 만드는 재료
+form
+input
+textarea
+label
+fieldset
+legend
+select
+option
+
+
+label태그 사용법
+1) 명시적 방법 -> for 속성 사용
+2) 묵시적 방법 -> label로 전체를 감싼다.
+
+input태그에 type="text"
+
+size 크기
+placeholder 가이드텍스트, 안내글자
+maxlength 최대글자
+minlength 최소글자
+
+get방식은 쿼리스트링이 나온다.
+post방식은 쿼리스트링이 안나온다.
+
+required 필수입력
+
+input:radio
+라디오버튼은 name으로 그룹핑한다
+checked -> 기본체크상태로 변환.
+
+input 태그에 들어가는 type
+text/password/checkbox/radio/date/color/email/number
+range/search/tel/url/file/reset
+
+textarea
+cols 
+rows
+
+------------------------------------------------------------
+file 전송시 enctype
+x-www-form-urlencode -> 기본값(파일이 없을때 사용)
+
+multipart/form-date -> 파일이나 이미지 보낼때 사용
+
+text/plain -> 인코딩 없이 전송 일반텍스트
+-------------------------------------------------------------
+
+문자보내기 전화걸기 이메일보내기
+<a href="tel:010-444-7777"> 전화걸기 </a> <br>
+<a href="sms:010-444-7777"> 문자보내기 </a> <br>
+<a href="mailto:admin@daum.net"> 이메일보내기 </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

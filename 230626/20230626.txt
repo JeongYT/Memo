@@ -1,0 +1,103 @@
+데이터베이스
+HTML, CSS, javascript, jquery, Node.js
+
+full stack 개발자과정
+프런트엔드 + 백엔드
+데이터베이스
+데이터베이스 프로그래밍
+
+ORACLE, MYSQL
+표준화가 안되어있음
+
+PostSQL
+
+Backend
+ORACLE DB
+SQL 실습
+------------------------------------------------------------------
+Select
+필터링
+데이터베이스함수
+조인
+서브쿼리
+그룹화
+제약조건
+권한
+------------------------------------------------------------------
+기본키 + 외래키
+
+데이터베이스 개념
+SQL명령어 실습
+MySQL과 ORACLE의 차이점
+------------------------------------------------------------------
+html태그안에 java 코드 -> jsp
+java코드안에 html태그 -> servlet
+jsp에서 db연동 -> sql언어
+------------------------------------------------------------------
+오라클 다운로드 사이트
+https://www.oracle.com/kr/database/technologies/oracle-database-software-downloads.html
+SQL Developer 다운로드 사이트
+https://www.oracle.com/database/sqldeveloper/technologies/download/
+
+
+Backend -> Oracle DB
+SQL실습 -> 
+
+워크벤치에서 testdb
+
+alter table burgers convert to character set utf-8
+
+필터링
+단일조건
+다중조건
+
+집계함수(통계구하기)
+
+시간설정 -> sysdate
+
+database 11g standard Edition
+
+윈도우 + R
+\\c07-t 검색
+oracle)ssn_dlm_06260320.exe 복사해서
+자신컴퓨터에 복사
+------------------------------------------------------------------
+교안자료실 -> 자바강좌 사이트
+
+http://www.unicode.org/charts/PDF/UAC00.pdf
+
+ctrl+alt+shift+L  -> 코드정렬하기
+
+문자열관련메소드
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

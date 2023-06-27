@@ -1,0 +1,101 @@
+CSS로 외부요소 제어하기
+1. :target 선택자 사용
+2. radio/checkbox로 체크시 형제나 자손을 선택해서 제어할 수 있다.
+input:checked+div{}
+3. 기타 애니메이션효과
+
+https://symbl.cc/kr/1F606/
+
+U+1F60A
+&#128522;
+\1F60A
+
+아이콘폰트 사용하기
+박스 가운데 정렬하기
+
+xeicon
+http://xpressengine.github.io/XEIcon
+
+1. CDN방식
+2. 다운로드
+3. 설치방식-node.js
+
+xeicon.css -> 코드정렬된 파일
+xeicon.min.css -> 압축파일 -> 용량이 작다
+나중에 배포는 min파일로 하는것이 유리하다.
+
+display:flex
+박스 수평정렬(기본 왼쪽정렬)
+justify-content:space-between; (양쪽정렬)
+align-items:center; (세로중앙정렬)
+
+박스가운데 정렬하기
+
+margin:auto
+*{margin:0 auto;}
+위아래 마진은0이고, 좌우는 auto ->가로 가운데
+
+구조,레이아웃,스타일을 구분하자.
+
+
+글자의 수직중앙정렬
+line-height로 지정
+
+
+<박스 중앙정렬>
+1. absolute/relative 사용
+position:absolute;
+left:50%; top:50%;
+transform:translate(-50%,-50%)
+
+2. flex 사용
+display:flex;
+margin:auto;
+
+3. flex 사용
+display:flex;
+justify-content: center;
+align-items: center;
+
+모달팝업창 - modal popup 창
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

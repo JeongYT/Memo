@@ -1,0 +1,89 @@
+이벤트모델
+이벤트레벨
+이벤트제거
+이벤트객체
+이벤트강제실행
+기본이벤트(디폴트이벤트)제거
+이벤트전달(캡처링/버블링)
+event.target/event.currentTarget
+이벤트위임(delegation)
+그외이벤트모델(익스플로러)
+mouseenter와 mouseover
+
+// window.onload=function(){ }
+// load 이벤트 이름, 이벤트 타입
+// onload 이벤트 속성
+// 할당된함수 : 이벤트리스너, 이벤트핸들러
+// 이벤트 연결한다.
+// 이벤트 관련속성
+// 이벤트 모델
+// DOM Level 0
+// 인라인 이벤트 모델, 기본 이벤트 모델(고전이벤트)
+// 한 객체에 두번이상 적용할 수 없다.
+
+// DOM Level 2
+// 표준 이벤트 모델, 익스플로러 이벤트 모델
+// addEventListener
+// attachEvent
+
+$('btn').on('click,function(){ });
+
+이벤트객체
+e || window.event
+
+this -> 클릭한 이벤트 발생한 객체
+e.currentTarget -> this
+
+btn.trigger('click')
+
+기본이벤트제거
+이벤트전달제거
+preventDefault();
+stopPropagation();
+
+기본이벤트 -> a태그 클릭
+
+a href="javascript:void(0)" 
+
+val.replace(/[가-힝]/g,"").length==0
+한글이 있으면 공백으로 대체하고 그럼 길이가 0이 된다.
+결국 한글이 있으면 길이가 0이다.
+
+이벤트전달(캡쳐링/버블링)
+
+1 -> 캡쳐링
+2 -> target
+3 -> 버블링
+
+이벤트 전달방지
+event.stopPropagation();
+이벤트 버블링 제거
+
+이벤트위임
+${'div'}.on('click a',function(){ })
+
+mouseenter와 mouseover의 차이점
+마우스이벤트
+키보드이벤트
+
+mouseover / mouseenter
+mouseout / mouseleave
+
+----------------------------------------------------------
+
+로컬스토리지/세션스토리지/쿠키
+정규표현식
+추가적인 ES5 내장객체
+
+---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

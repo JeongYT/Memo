@@ -1,0 +1,94 @@
+node.js
+
+jquery강좌 -> 103번 게시판 참조
+node.js기본
+자바스크립트강좌 -> 68번 게시판 참조
+
+server.js
+127.0.0.1:1337
+             포트
+	 0~65536
+
+적으면 안되는 포트번호 80,24,110
+
+Ctrl + c -> 서버 재실행하기위해서
+
+https://expressjs.com/ko/ 
+npm install express@3.4.7 -> 서버 다운로드 
+
+정적파일 
+ - 변화하지 않는 파일
+ - html, css, javascript
+ - 아무리 요청해도 변하지 않는 파일
+ - 웹서버
+
+동적파일
+ - dynamic web service
+ - WAS(톰캣), 미들웨어, 와스서버
+ - 언어 : java, jsp
+ - 실시간검색어 -> 동적파일
+
+public 폴더 생성 -> 그 밑에 index.html 파일 생성
+http://127.0.0.1:52273/index.html
+
+라우터
+
+app.get()
+app.post()
+app.put()
+app.del()
+app.all()
+
+var router=express.Router();
+router.route()
+
+서버를 수정했을때 다시껏다 켜지 않게 하기
+node.js 무중단서비스
+npm install pm2 -g
+pm2 start server2.js --watch -> pm2 시작
+
+서버데몬
+
+set-ExecutionPolicy RemoteSigned
+regsvr32.exe msctf.dll
+set-ExecutionPolicy -Scope CurrentUser
+
+pm2 kill -> pm2중지
+
+uri mapping
+라우트 처리
+-------------------------------------------------------------
+jQuery ajax
+
+public 폴더에 login.html
+
+크롬웹스토어 -> tabbed postman 크롬에추가
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

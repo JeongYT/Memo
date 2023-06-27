@@ -1,0 +1,81 @@
+naver html convention 정리하기
+
+1)
+특정 요소에 class, style을 선언할 때는 선언 순서를 준수한다. 
+다음과 같이 class와 style은 제일 뒷부분에 선언한다.
+<input type="text" id="user_id" title="사용자ID" class="input_txt" style="width:100px">
+
+2)
+<map> 요소의 name 애트리뷰트를 선언하여 <img> 요소의 usemap 애트리뷰트와 같은 이름으로
+커플링한다.
+<img src="img_main.gif" width="696" height="196" title="한글날이벤트" alt="한글날이벤트, 한글을
+글꼴로 나눕니다" usemap="#help">
+<map name="help">
+<area shape="rect" coords="506,48,608,139" href="#" target="_blank" title="고객센터"
+alt="고객센터, 모든 궁금증이 해결되는 곳">
+</map>
+
+3)
+HTML 코드와 주석은 줄로 분리해야 한다.
+<!-- content -->
+<div id="content">
+ <!-- 네임카드 -->
+ <div class="namecard"> ... </div>
+ <!-- //네임카드 -->
+</div>
+<!-- //content -->
+
+4)
+<head>
+meta, title, link, script, style 순서로 요소를 선언한다.
+<head>
+<meta charset="utf-8">
+<title>속보 : 뉴스</title>
+<link rel="stylesheet" href="css/default.css">
+<script src="js/default.js"></script>
+<style>
+…
+</style>
+</head>
+
+5)
+<link>
+rel, type, href 애트리뷰트를 선언한다.
+<link rel="stylesheet" type="text/css" href="css/default.css">
+
+6)
+<fieldset>
+<form> 요소의 자식 노드로 선언하여 폼 컨트롤 요소들을 그루핑하기 위해 선언한다.
+<form>
+<fieldset>
+<legend>개인정보</legend>
+ …
+</fieldset>
+</form>
+
+7)
+<textarea>
+cols, rows 애트리뷰트를 선언한다.
+CSS를 정상적으로 불러오지 못하는 상황에서도 사용에 문제가 없도록 cols, rows의 애트리뷰트값은 각각
+최소 30, 5 이상이 되도록 선언한다. <label>로 연결(coupling) 할 수 없는 경우 title을 사용하여도 무방하며
+id, title 애트리뷰트를 선언한다.
+<textarea cols="30" rows="5" (id=" ") (title=" ")></textarea>
+
+8)
+<button>
+type 애트리뷰트를 선언한다.
+• type 애트리뷰트를 button으로 선언하여 열기/닫기, 접기/펼치기 등의 UI를 제어한다.
+• 폼 전송 역할을 하는 버튼은 submit 타입을 사용한다.
+<button type="button">열기</button>
+<button type="submit">전송</button>
+
+9)
+<caption>
+표의 제목을 표현하기 위해 사용한다. caption 요소는 반드시 선언한다
+<caption>자장면과 짬뽕의 가격과 열량 비교</caption>
+
+10)
+<table>
+2차원의 격자형 데이터를 표현하기 위해 사용한다.
+표의 요약 내용을 표기해야 할 때 summary 애트리뷰트를 선택적으로 사용할 수 있다.
+<table summary="summary context here">

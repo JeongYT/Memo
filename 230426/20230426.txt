@@ -1,0 +1,78 @@
+-CSS 속성-
+위치속성
+그림자속성
+다단속성
+테이블속성
+
+------------------------------------------------------------------------------------
+부트스트랩-CSS프레임워크
+사스 sass, less
+
+dir
+md -> 폴더만들기
+
+cd.. -> 상위디렉토리로 이동
+cd. -> 현재디렉토리
+
+d:\이름\htmlcss 로 이동해서
+code. 입력하고 엔터 -> vs code가 실행된다.
+
+<위치속성>
+z-index -> z축 방향의 순서
+overflow
+position
+float
+
+overflow:visible/scroll/hiddenauto
+overflow-x:scroll;
+overflow-y:scroll;
+
+자식박스에 position:absolute를 주면 
+부모에는 height 값을 주어야한다.
+
+<그림자속성>
+box-shadow
+text-shadow
+
+box-shadow:inset x y 흐림 퍼짐 색
+               outset* 기본값
+내부그림자/외부그림자
+
+------------------------------------------------------------------------------
+박스 가로가운데 정렬 -> margin:auto;
+박스 세로가운데 정렬 
+글자 가로가운데 정렬 -> text-align:center;
+글자 세로가운데 정렬 -> line-height:부모박스 높이;
+-------------------------------------------------------------------------------
+
+http://bestcssbuttongenerator.com/
+https://border-image.com
+
+그라디언트
+css 레이아웃방식
+1. float
+2. position
+3. flex
+4. grid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+
+body태그에 내릴 필요없이 js 쓰는법
+1.<script src="js/0519.js" defer></script>
+-> defer 사용
+2. js파일에 window.onload=function(){  } 사용
+
+isNaN() 숫자가 아닌것
+
+var students=[];
+students.push({a});
+-> students배열에 a를 넣어줌
+
+배열.push(데이터);
+배열.pop(); -> 배열 맨 위에 데이터 가져오기
+
+var 야옹이=new 고양이();
+
+fetch();
+ajax,axios
+비동기, 프라미스(promise)
+async 
+

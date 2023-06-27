@@ -1,0 +1,247 @@
+오전
+1) MYSQL 데이터베이스 설치
+   SQL언어 실습
+2) Nodejs 환경에서 express 서버를 이용한
+ DB 연동하기
+-------------------------------------------------
+오후
+Java 시작
+-------------------------------------------------
+
+sql server 5.7.42 64
+conntectorj 8.0.33 86
+odbx 8.0.33 64
+document 
+4개 설치
+
+root/1234 통일
+port 3306
+
+MYSQL 언어 실습
+
+데이터베이스보기
+show databases;
+
+mysql > 
+
+// company 데이터베이스 생성하기
+create database company;
+
+MySQL, Oracle SQL, MSSQL
+MariaDB, 몽고DB
+
+데이터베이스관리프로그램
+
+데이터베이스 생성
+테이블 생성 -> 필드가 생성
+테이블에 레코드값을 삽입
+
+대소문자 구별 안하지만 보통 대문자로 기입한다.
+문자열은 쌍따옴표가 아닌 홋따옴표 ' '
+주석 -- 
+
+company 데이터베이스 사용
+use company
+
+테이블 생성, 레코드에 값 삽입명령어
+
+테이블생성
+create table products(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+ modelnumber VARCHAR(15) NOT NULL,
+ series VARCHAR(30) NOT NULL
+);
+
+한글지원
+create table products(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+ modelnumber VARCHAR(15) NOT NULL,
+ series VARCHAR(30) NOT NULL
+)charset = utf8;
+
+테이블 정보보기
+describe products;
+
+삽입(POST)
+insert into products (name, modelnumber,series) value('kim','0103337777','IT Programmer');
+
+insert into 테이블명 (필드1,필드2,필드3) values('값1','값2','값3');
+
+products 테이블에 모든 필드를 조회해라
+select * from products;  GET
+
+insert into products (name, modelnumber, series) values
+  ('Jung','01196000805','Artist'),
+  ('Oh','011900','American Deluxe'),
+  ('Park','01196000805','Artist'),
+  ('Go','0131082306','Artist'),
+  ('Jang','01196000805','Artist'),
+  ('Yun','01196000805','Road worn');
+
+insert into products (name, modelnumber, series) values
+  ('김원빈','01122000805','Artist'),
+  ('Oh','011400','American Deluxe'),
+  ('손흥민','011112000805','Artist'),
+  ('Go','0131032306','Artist'),
+  ('장동건','01155000805','Artist'),
+  ('Yun','011156000805','Road worn');
+
+한글인식하기
+alter table products convert to charset utf8;
+
+select id,name,series from products;
+
+select * from products where series='artist';
+
+select * from 테이블명 where 조건
+
+select * from products where (seriest="Artist") OR (series="Road Worn");
+
+// modelnumber가 011로 시작하는 필드를 검색
+select * from products where modelnumber Like '011%';
+
+// 011로 시작하고 3글자가 더 붙는 데이터 조회
+select * from products where modelnumber Like '011___';
+
+// name으로 오름차순 정렬해라 (order by 기본값이 asc)
+select id, name, series FROM products ORDER BY name asc;
+
+// 내림차순정렬 desc
+select id, name, series FROM products ORDER BY name desc;
+
+// 상위 데이터 2개만 선택하기
+selecy * FROM products LIMIT 2;
+
+// 데이터 2개 건너뛴뒤 데이터 3개 선택하기
+select * FROM products LIMIT 2,3;
+
+SELECT id, name, modelnumber FROM products 
+WHERE (id<15) AND (modelnumber LIKE '011%') 
+ORDER BY name DESC
+LIMIT 3;
+
+그룹화
+select series FROM products GROUP BY series;
+
+데이터수정 - patch
+update products set name='강감찬' where id=11;
+update 테이블명 set 필드=값 where 조건
+
+데이터 삭제
+delete from products where id=15;
+
+모든 레코드 삭제
+delete from products;
+
+rollback;
+commit;
+
+워크벤치 -> datatbase -> connect to database
+OK -> 1234 입력
+
+company 데이터베이스에서
+우클릭 -> set as default schema 클릭
+
+select * from products; -> 컨트롤 엔터
+
+select distinct series from products;  // 중복제거
+select * from products where series in ('artiest',"road worn"); // 포함
+select * from products where series not in ('artiest','road worn'); // 제외
+
+테이블 삭제
+drop table products;
+
+데이터베이스 삭제
+drop database company;
+
+create table user(
+id varchar(20),
+password varchar(20),
+name varchar(20)
+)
+insert into user(id, password, name) 
+values('aaa','1234','kim');
+
+edit preference
+-> SQL Editor -> Safe updates 에 체크해제
+워크벤치 다시 시작해야함
+
+Query -> auto-commit transaction 체크해제
+
+----------------------------------------------------------------------
+Command Line 창에 실행하면 rollback이 처리가 되지 않는다.
+
+Workbench창과 Command Line창을 띄워놓고
+insert문을 실행해보고, commit과 rollback을 테스트해보자
+-----------------------------------------------------------------------
+commit과 rollback 명령어는 워크벤치창에서 해야한다.
+-----------------------------------------------------------------------
+
+mysql.js
+
+npm install mysql
+
+Rest API
+
+전체조회 get
+개별조회 get
+생성 post
+수정 put,patch
+삭제
+
+
+개별조회
+select * from products where id=8;
+
+select * from products where id=?, [id], () ->{};
+'select * from products where id='+id, () ->{};
+
+데이터 추가 insert
+
+insert into products (name,modelnumber,series) values('김가나','9999','HTML');
+
+"insert into products (name,modelnumber,series) values('"+name+"','"+modelnumber+"','"+series+'")";
+
+127.0.0.1:52273/products?name=김세종&modelnumber=1111&series=CSS
+
+데이터 수정 update
+update products set name='소녀시대',modelnumber='7777',series='singer' where id=1;
+
+npm mysql 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

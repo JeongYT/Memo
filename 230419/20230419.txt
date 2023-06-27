@@ -1,0 +1,173 @@
+[디자인]
+1달예상
+HTML태그
+CSS
+부트스트랩-CSS프레임워크
+-------------------------------------
+자바스크립트
+
+noto sans - 구글에서 만든 폰트
+roboto
+NotoSerifCJKkr
+
+폰트에 대한 세부속성들
+font-style:italic/normal -> 기울임 글꼴
+font-varient:small-caps -> 작은 대문자
+                nomal*   *기본값
+font-weight:bold; -> 굵은글자
+font-size:20px; ->글자크기
+line-height -> 줄간격
+font-family:"궁서체",serif ; -> 글꼴
+
+통합속성
+font:style variant weight size/line-height family
+ex) font:italic small-caps bold 20px/1.5 "궁서체";
+ex) font:italic 12px/24px "돋음";
+
+bold -> 400 보통글자 700이상 굵은글자
+
+폰트명은 영문은 따옴표없이 serif, Arial,
+공백이 있으면 따옴표처리 "Times new Roman"
+한글글꼴도 따옴표처리 "궁서체"
+
+line-height:2
+글자가 1이면 줄크기는 글자의 2배
+가독성 -> 1.6~1.8
+
+폰트
+시스템 폰트와 웹폰트가 있다
+웹폰트를 사용해야한다.
+
+윈도우웹폰트
+C:\Windows\Fonts
+
+구글웹폰트
+https://fonts.google.com/
+
+roboto 
+noto sans
+
+라이브러리 사용방법
+1. 다운로드해서 연결
+2. CDN 방식 -> 인터넷주소로 링크걸기
+콘텐츠 전송 네트워크(CDN)
+
+CSS외부 파일 연결방식
+1. link태그를 head태그 중간에 삽입해서 src로 연결하는 방법
+2. @import url('파일명');
+style태그 안에 삽입하거나 css파일 최상단에 삽입한다.
+
+@font
+@media
+@import
+@animation
+at-rules
+
+fonts 다운로드해서 사용하기
+ttf
+otf
+wo
+
+preconnect
+preload
+crossorigin 외부도메인허용
+
+CSS선택자 수업
+
+코드편집기
+eclipse - jsp
+intellij - 자바
+
+속성선택자
+ - 기본속성
+ - 문자열속성
+
+class="aaa bbb ccc"
+.aaa{ }
+.bbb{ }
+.ccc{ }
+
+<p class="aaa" class="bbb"> -> 사용불가
+<p class="aaa bbb"> -> 정상 표준상태
+
+문자열 속성선택자
+~= -> 공백
+|= -> 하이픈
+^= -> 시작
+$= -> 끝
+*= -> 포함
+
+-webkit-
+vendor prefix라고 하고 브라우저 전용 접두사
+웹킷은 크롬브라우저 엔진 이름
+엣지 등이 채택하고있음
+
+text-stroke만 적으면 스타일이 적용 안되고
+-webkit-text-stroke를 붙여야한다
+그외
+-ms- = IE
+-o- = Opera
+-moz- = Firefox
+-webkit- = Chrome, Edge
+
+CSS상속
+CSS우선순위(구체성)
+
+CSS상속
+부모로부터 물려받는 것
+부모태그로부터 자식태그로 전파되는 속성
+1) 자동상속
+ ex) 글꼴, 배경색, 글자색
+2) 수동상속
+ ex) border, margin, padding, opacity, 등
+자동상속되지 않는다.
+inherit
+
+body태그에 글자색을 지정하면 그밑에
+태그들은 글자색이 변경된다.
+a태그는 글자색이 변경되지 않는다.
+a태그의 글자색은 a태그를 바로 선택하기
+a{color:red}
+혹은 a태그도 글자색을 상속 받겠다.
+a{color:inherit;}
+
+CSS우선순위
+CSS가 중복될 경우 마지막 코드가 적용된다.
+
+:after
+:before
+:first-letter -> 첫번째 글자
+:first-line -> 첫번째 줄
+::selection -> 마우스로 드래그한 상태
+
+transition은 어떤 속성이 변경되면 시간설정을 줘서 애니메이션 효과를 줄 수 있다.
+:hover에 주면 호버에만 시간 적용되고
+hover와 out 모두 적용하려면 원본에 transition을 적용한다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

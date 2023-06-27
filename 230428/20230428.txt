@@ -1,0 +1,140 @@
+@import
+@font
+@keyframes
+@media
+
+전체를 감싸는 박스 하나 생성
+wrap -> pc
+container -> mobile
+
+기본적인 틀
+<div>
+<header></header>
+<section></section>
+<footer></footer>
+</div>
+
+header,footer는 한개만 사용
+section은 여러개 사용가능
+h1태그도 하나만 사용
+
+@media
+@import
+
+screen.css
+print.css
+
+장비
+모바일,tv,모니터,리더기,프린터,지문인식기
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+m.daum.net
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+@media로 반응형웹
+
+모바일 767px
+         480px
+태블릿 768px
+데스크탑 960px/1024px/1280px
+
+방향전환
+orientation:portrait  세웠을때(세로)
+orientation:landscape 눕혔을때(가로)
+
+웹페이지의 단구조로 분류
+데스크탑 3단
+테블릿 2단
+모바일 1단
+그리드구조
+
+flex-wrap:wrap; -> 박스줄바뀜 
+flex:2 1 30%; -> 30%로 맞추는데 안맞으면 2배 늘어나거나 1배줄어든다
+justify-content: space-between; -> 양 사이드 정렬
+
+<flex 속성>
+flex-direction:row/column/row-inverse/column-inverse
+row*기본값
+
+부모한테 -> display:flex;
+자식한테 -> display:float;
+
+flex-wrap:nowrap/wrap/wrap-reverse
+	줄안바꾸기/바꾸기
+
+flex-flow:row;
+flex-flow:column wrap;
+order:1/2/3 순서
+order:0 기본값
+
+flex-grow -> 얼마나 늘릴지
+flex-shrink -> 얼마나 줄일지
+flex-basis -> 기본 크기지정
+
+flex:2 1 auto; 너비값을 사용
+flex:2 1 0;     인수값을 사용
+    grow shrink basis
+
+수평정렬
+justify-content:flext-start*/flex-end/center/
+                  space-between/space-around/space-evenly
+
+수직정렬
+align-items:stretch*/flex-start/flex-end/center/baseline
+
+align-self:stretch*/flex-start/flex-end/center/baseline
+
+align-content : 여러줄 배치방법
+flex-start*/flex-end/center/space-between/space-around/space-evenly
+
+그리드 시스템
+그리드레이아웃
+정적그리드 -> px
+동적그리드 -> %
+반응형그리드 -> px+%
+
+@media
+768~960px(1024px)
+모바일 -> 1단 -> 그리드해제
+
+float
+flex
+grid
+
+1단 2단 3단 6단 12단
+
+960기준
+박스크기
+박스간격 = gutter 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

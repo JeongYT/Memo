@@ -1,0 +1,180 @@
+태그
+속성
+태그마다 다른 속성이 있고,
+전체태그에 공통으로 들어가는 속성이 있따.
+
+일반속성
+전역속성(글로벌속성)
+ class, id, style, title
+<h1 href="">
+class와 id는 식별자이다.
+
+style 속성 = css코드
+
+css속성 : 값;
+color:red;
+; 세미콜론은 하나만있으면 생략가능
+color:red; background:blue;
+;구분자
+" " 쌍따옴표
+구문오류 -> syntax 에러 -> 오타
+
+font태그 -> 비표준태그
+태그는 정보를 표시하는 역할
+디자인용이 아니다.
+
+<pre> preformatted
+입력한대로 그대로 나오는 태그
+
+공백 -> &nbsp;
+줄바꿈 -> <br>
+
+젠코딩 또는 emmet 연습
+
+** 개꿀팁 **
+h1
+h1*3 -> h1태그를 3개 만들어줌
+h1*3{welcome} -> h1태그 3개 만들고 안에 welcome 글씨 넣음
+h1*3{welcome-$} -> h1태그 3개 만들고 안에 welcome-순번 글씨 넣음
+
+$ -> 순번
+* -> 개수
+
+h$*6{heading $}
+
+ctrl + alt 누른상태로 아래방향키로 내리고 입력 
+-> 해당 범위내에 같은 글씨 출력
+
+ctrl + d -> 해당 글씨와 같은 글씨 찾아줌
+
+ctrl + / -> 주석처리
+
+b -> 굵게
+i -> 기울임
+strong -> 굵게(강조)
+em -> 기울임(강조)
+
+박스와 글자의 차이점 -> 박스는 차곡차곡 쌓이고 글자는 쭉 나옴
+
+글자관련 태그
+a, b, strong, span, em, i
+
+<hr> 수평선 넣기 
+<sub> -> 아래첨자 (원소기호 h20)
+<sup> -> 위첨자 (제곱)
+
+태그의 기본입력방식
+시작태그 ~~ 끝태그
+<h1> 텍스트노드 </h1>
+h1태그
+자바스크립트 h1 tag node
+수미쌍관법칙
+
+단독으로 사용되는 태그
+<br> <hr> <input> <img>
+
+< : &lt;
+> : &gt;
+" : &quot;
+& : &amp;
+© : &copy
+
+유니코드 검색
+윈도우 + ; -> 이모티콘
+
+목록태그
+순서없는 목록태그 <ul>
+list <li>
+순서있는 목록태그<ol>
+
+ul>li*3{에스프레소}
+
+목록기호
+type(ul) - disc/circle/square
+type(ol) - 숫자/알파벳대소/로마자대소
+
+start="시작하고싶은 숫자"
+
+현재작업폴더는 html 폴더이다
+html ------------------ css -> css파일
+index.html   img -> 이미지파일
+	    js -> 자바스크립트파일
+	    font -> 폰트파일
+
+정보구조,폴더구조
+프로젝트명shop-css
+
+이미지파일 -> png/jpg
+아이콘파일 -> gif
+
+아이콘천국
+https://icon.hompys.com/
+
+img 태그
+<img src="" width="" height="" alt="No image">
+alt 대체텍스트, 웹접근성을 위해서 반드시 이미지에 대한 설명문구를 넣어야한다.
+안넣으면 웹표준 검사와 웹접근성 검사에서 걸린다.
+alt -> 이미지가 표시되지 못하는 경우 화면에 표시되는 텍스트 
+
+./ 현재폴더
+../ 상위폴더
+
+alt + z -> 화면 줄바꾸기
+
+border="5" 테두리가 나오지만 웹 표준방식이 아니라 CSS로 테두리를 주자.
+
+박스요소, 글자
+<p> 문단
+<h1> 제목
+<div> 그냥박스
+그룹핑
+
+박스모델
+블럭요소 모델
+가로세로 크기
+width, height, margin(외부여백)
+
+글자들이 감싸는 태그는 span
+대표적인 인라인태그
+가로세로 크기지정이 안된다.
+font-size:20px로 키운다.
+
+div와 span은 그룹핑 용도이다.
+
+a태그 링크
+
+targer="self" 기본값 default
+          new 한번만 새창
+          _blank 계속 새창
+
+media
+   kbs.html
+   sbs.html 
+   mbc.html
+sports
+   lg.html
+   sk.html
+
+<a href="javascript:history.back()"> -> 뒤로가기
+<a href="javascript:history.forward()"> -> 앞으로가기
+
+<a href="url>
+
+javascript:alert("hello")
+
+내부파일로 링크걸기
+현재페이지에서 위 아래로 링크를 건다.
+특정항목으로 화면이 이동한다.
+
+href="#아이디"
+특정 아이디 있는 곳으로 화면 이동
+href="#"
+맨위로 이동
+
+lg 홈페이지 kbs홈페이지에 아래로 가기
+
+고양이로 구글 검색하는 링크걸기
+
+
+
+

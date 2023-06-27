@@ -1,0 +1,80 @@
+표스타일 속성 - table
+게시판/목록
+
+caption-side
+border
+border-collapse
+border-spacing
+empty-cells
+width, height
+table-layout
+text-align
+vertical-align
+
+caption 숨김처리
+
+표 제목의 위치 지정하기
+caption-side:top*/bottom
+
+표의 테두리 넣기
+table
+td/th
+tr
+
+border-collapse:separate/collapse
+border-spacing:0;
+empty-cells:show/hide -> border-collapse:separate일때만 적용됨
+(비어있는 셀 보여주냐 안보여주냐)
+
+table-layout:fixed/auto*
+
+vertical-align:baseline/top/bottom
+
+display:none/block/inline/inline-block/flex/table/table-cell
+
+ul { display:table; } -> table로 변경
+ul li { display: table-cell; padding:10px;} -> td로 변경
+
+풍선도움말 예제
+스위치 예제
+
+fadeIn, fadeOut 형태로 보이게 하기
+
+부트스트랩
+버전5부터 jQuery 지원x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

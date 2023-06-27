@@ -1,0 +1,57 @@
+column-count:3; -> 3개로 컬럼이 나눠짐
+colum-width:120px; -> px값만큼 컬럼이 나눠짐
+
+- count랑 width랑 같이 사용 못함(둘중 하나만 사용)
+
+column-rule-style:solid;
+column-rule-color:red; 
+column-rule-width:2px; 
+
+column-rule: 5px dotted blue;
+
+column-gap:20px; -> 컬럼사이 간격
+----------------------------------------------------------------
+SVG 애니메이션-차트
+
+adobe
+피그마, XD, 스케치(맥용)
+
+재플린
+
+amchart 라이브러리
+demos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

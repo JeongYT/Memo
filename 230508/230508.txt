@@ -1,0 +1,59 @@
+user-scalable=yes
+손가락으로 화면확대 가능
+
+width=device-width
+폭은 장비의 폭에 따른다.
+
+meta태그는 해당 웹페이지에 대한 정보를 표현해주는 태그
+
+shortcut icon
+모바일로 접속 -> 그 페이지를 바탕화면에 바로가기 만들기
+앱 -> 바로가기 만들기
+
+파비콘아이콘 등록하기
+<link rel="icon" href="ico 이미지">
+
+웹페이지
+하이브리드 웹/앱 -> 설치형웹
+네이티브 앱
+React Native 앱
+java 안드로이드 앱
+ios 앱
+
+모바일 관련 reset.css
+-> CSS3강좌 -> 22번게시판 확인
+
+-webkit-text-size-adjust:none;
+글자크기 자동조절 방지용
+
+img, fieldset {border:0}
+em,i,address{font-style:normal;}
+textarea{resize:none;}
+label{cursor:pointer;}
+
+reset.css -> 초기화스타일
+common.css -> 공통스타일
+
+좌측버튼을 클릭했을때
+좌측에서 드로워창, 패널창 나타나기
+부트스트랩->오픈캔버스
+
+패널구현하기
+overlay
+push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

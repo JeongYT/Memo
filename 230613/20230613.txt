@@ -1,0 +1,76 @@
+node.js 
+
+내부모듈
+http,fs
+외부모듈
+express
+bodyparser
+cookiparser
+
+주소창 -> board.js?name=kim&age=20&job=it
+
+파일 - 소유권, read, write, execute 권한
+                    1      1        1  -> 7	
+사용자, 같은그룹, 기타그룹
+읽고, 쓰고, 실행
+777 -> open
+
+JavaScript 프로그래밍언어
+Node.js 내부에 프레임워크 express 웹서버용
+Node.js는 플랫폼이다.
+Node.js는 언어도 아니고 프레임워크도 아니다.
+
+프레임워크와 플랫폼의 차이점
+----------------------------------------------------------------------
+jQuery
+
+제이쿼리 선택자
+문서객체선택, 탐색
+문서객체조작
+이벤트
+효과
+ajax(비동기통신)
+
+폼관련 이벤트예제
+ready와 load
+
+focus / focusin
+강제 / 비강제
+버블링 발생x / 버블링 발생o
+blur / focusout
+
+input에 포커스를 잃어버렸을때
+부모요소에 리스너를 주고싶을때
+focusin과 focusout을 사용하자.
+(일반적으로 focus와 blur를 사용)
+--------------------------------------------------------------
+이벤트예제
+
+getParameter()
+getParameterValues()
+
+window.onload=function(){ } -> js
+$(document).ready(function(){ }) -> jQuery
+
+효과 - 애니메이션
+
+ease, easein -> 점점느리게, 점점빠르게
+
+자료구조 -> 큐(queue)
+스택,리스트,arraylist, vector
+Hash, tree, Map
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

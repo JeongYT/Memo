@@ -1,0 +1,83 @@
+CSS선택자
+:checked
+:focus
+:enabled
+:disabled
+:target
+:before
+:after
+:not( )
+
+레이아웃
+동적인 요소구현
+
+부트스트랩
+SASS 사스
+--------------------------------------------------------------
+상태선택자와 형제선택자를 활용하여 특정박스를 제어한다.
+
+:focus -> 커서가 놓인상태(탭키)
+
+border는 테두리 -> 레이아웃에 영향
+outline은 테두리 외곽 -> 디자인용, 레이아웃과 무관
+
+:enabled
+:disabled
+readonly는 입력은 안되고 기존의 value를 파라미터로 컨트롤러에 넘길수 있지만,
+disabled는 입력도 안되고 값도 넘길수 없다.
+
+:target
+
+:before
+특정요소의 앞부분
+:after
+특정요소의 뒷부분
+
+UI구현요소
+1. 탭 메뉴
+2. 풀다운 메뉴(드롭다운 메뉴)
+3. 아코디언
+4. 이미지 슬라이드
+5. 팝업 모달창
+6. 풍선 도움말
+7. 가로/세로 네비게이션바
+8. 탭 패널과 드로워
+9. 고정 사이드 메뉴
+10. 고정 네이게이션바
+11. 스크롤링 윈도우
+
+sticky
+swipe
+
+박스의 공간모델
+
+1. box-sizing : content-box *
+박스의 가로크기 = width+margin+border+padding
+
+2. box-sizing:border-box
+가로크기=width+margin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
