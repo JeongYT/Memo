@@ -1,0 +1,46 @@
+-- 1. 주문#10 장바구니에 담긴 상품들의 총합은?
+select * from order_details
+join products
+on order_details.id = products.id
+and order_details.id=10;
+
+-- 2. 상품#11 우유식빵의 총 판매금액은?
+select sum(products.price*order_details.count) as "우유식빵 판매금액" from products
+join order_details
+on order_details.product_id = products.id
+and products.id=11
+join orders 
+on orders.id=order_details.order_id 
+and orders.status='DELIVERED';
+
+-- 3. 쿠마가 구매한 모든 상품 목록들 중, 다음을 조회하시오.
+select
+ users.nickname as "구매자명",
+ products.name as "상품명",
+ products.price as "가격",
+ order_details.count as "주문수량"
+from users 
+join orders on orders.id=users.id
+and users.nickname='쿠마'
+join order_details on order_details.order_id=orders.id
+join products on order_details.product_id=products.id;
+
+-- 4. 호크가 구매한 모든 상품의 총 구매 가격은?
+select
+ users.nickname as "주문자명",
+ orders.id as "주문번호",
+ payments.amount as "결재금액"
+from users
+join orders 
+on orders.user_id=users.id 
+and users.nickname='호크' 
+Left join payments 
+on payments.order_id=orders.id ;
+ 
+-- 5. 호크가 결제한 총금액은?
+select
+sum(payments.amount)
+from users join orders on
+orders.user_id=users.id and users.nickname='호크' 
+Left join payments on
+payments.order_id=orders.id ;

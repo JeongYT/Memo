@@ -1,0 +1,39 @@
+[객체지향입문]
+3-18
+
+객체배열사용하기
+2차원배열
+ArrayList 활용하기
+종합예제
+상속
+-------------------------------------------------------------
+test04
+
+alt+insert -> getter/setter
+
+class Book
+클래스를 만드는 이유
+객체 - 재활용, 재사용하기 위해
+
+BookArrayTest
+
+배열복사
+장바구니에  상품추가
+
+shallow copy
+deep copy
+
+3-19
+
+ArrayList
+
+장바구니=['사과']
+장바구니=['사과','배']
+push('배');
+
+장바구니 복사 -> '사과','배'를 재할당
+
+clear()
+contations()
+indexOf()
+
