@@ -1,0 +1,41 @@
+jdbc 프로그래밍
+
+데이터베이스 연동
+mysql로 DB연동
+oracle로 DB연동
+
+create table books(
+id int,
+title varchar(50),
+author varchar(50),
+price float,
+qty int,
+primary key(id)
+) charset = utf8;
+
+javaproject 우클릭 -> Build Path -> Configure Build Path 
+-> Libraries 탭 -> Modulepath -> Add external Jars클릭 
+-> mysql-connector-java-5.1.25-bin 선택하고 Apply
+
+예외처리해야한다
+
+1. 데이터베이스생성
+2. 이클립스에서 외부라이브러리 추가
+   mysql, oracle jar파일
+  데이터베이스 드라이버는 자바 내부클래스가 아니어서 
+  build path로 추가한다
+ - jsp프로젝트에서는 web-inf -> lib 폴더 복사한다.
+3. main 함수 만들고
+4. jdbc 프로그래밍 절차 대로 코딩한다.
+5. 데이터베이스 클래스를 import 하고
+ try catch로 예외처리 해준다.
+
+OracleDBTest.class
+
+system/1234
+scott/TIGER
+
+카페에서 jsp 라이브러리 파일에서 db연동 예제파일을 다운
+
+mave, gradle
+프로젝트 관리도구
