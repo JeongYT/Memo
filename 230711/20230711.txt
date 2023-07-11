@@ -1,0 +1,75 @@
+- 자바 프로그램 : 자바의 전반적인 것들 배우기
+
+JDK 다운로드 - https://www.oracle.com/java/technologies/downloads/index.html
+JDK를 다운받게 되면 C -> program files -> java 폴더가 생김
+
+시스템 -> 고급시스템설정 -> 환경변수 -> Path -> 새로만들기
+변수이름 -> JAVA_HOME
+변수값 -> jdk 깔린곳
+
+- 유용한 패키지와 클래스들
+
+
+ java.lang.Object 최상위 클래스
+ java.lang.String  문자열 클래스(StringBuffer, StringBuilder 클래스도 있음)
+  <StringBuffer의 생성자들>
+  - StringBuffer()  크기 16인 빈 문자열이 생성됨
+  - StringBuffer(int capacity)  capacity 값을 주면 그 크기로 빈 문자열이 생성됨
+  - StringBuffer(String str)  문자열 str로 초기화하는 인스턴스가 생성됨
+ java.lang.Math   수학 함수들을 모아 놓은 클래스
+  <메소드 종류>
+  - abs(double a)	a의 절대값을 계산
+  - ceil(double a)	a이상의 수 중에서 가장 작은 정수를 반환
+  - floor(double a)	a이하의 수 중에서 가장 큰 정수를 반환
+  - max(double a, double b)	최대값
+  - min(double a, double b)	최소값
+  - pow(double a, double b)	a를 b만큼 제곱한 수를 반환 
+  - round(double a)  a를 반올림한 값을 반환
+  - sqrt(double a)	a의 루트 값을 반환
+ java.util.Random 임의의 수가 필요할 때 유용한 클래스
+
+https://docs.oracle.com/en/java/javase/12/docs/api/index.html
+-----------------------------------------------------------------------------
+문제) Math.random을 이용하여 컴퓨터가 1에서 100사이의 정수를
+임의로 선택하도록 합니다.
+사용자에게 컴퓨터가 선택한 수를 맞추는 코드를 작성하세요.
+몇 번 만에 숫자를 맞추는지 출력하세요.
+
+실행결과
+컴퓨터가 1부터 100사이의 하나의 정수를 선택했습니다.
+***** 컴퓨터가 선택한 수를 맞춰 보세요 *****
+------------------------------------------------
+1부터 100사이의 값을 입력하세요 : 50 (사용자 입력)
+더 작은 수를 입력하세요
+1부터 100사이의 값을 입력하세요 : 20 (사용자 입력)
+더 큰 수를 입력하세요.
+1부터 100사이의 값을 입력하세요 : 25 (사용자 입력)
+더 작은 수를 입력하세요.
+1부터 100사이의 값을 입력하세요 : 22 (사용자 입력)
+더 작은 수를 입력하세요.
+1부터 100사이의 값을 입력하세요 : 21 (사용자 입력)
+컴퓨터가 선택한 수를 맞췄습니다.
+시도 횟수는 5번입니다.
+-----------------------------------------------------------------------------
+
+ - 자바 입출력
+  · 스트림(stream) : 데이터가 다니는 길. 컴퓨터와 입출력 장치 사이에 연결된 길이고,  이러한 스트림에 
+                         적절한 입출력 클래스를 이용해서 데이터를 읽어 들이거나 출력하게 되는 것.
+                         스트림은 바이트 스트림과 문자 스트림으로 구분됨.
+  ① 입력 스트림 클래스 - 클래스명이 InputStream 또는 Reader로 끝남.
+  ② 출력 스트림 클래스 - 클래스명이 OutputStream 또는 Writer로 끝남.
+  ③ 바이트 단위 입출력 클래스 - 클래스명이 Stream으로 끝나는 클래스.
+  ④ 문자 단위 입출력 클래스 - 클래스명이 Reader/Writer로 끝나는 클래스.
+ 
+  스트림 클래스의 계층 구조 : 
+  Object 바로 밑에 InputStream, OutputStream, Reader, Writer, RandomAccessFile, File
+  InputStream 클래스의 하위 클래스 : FilterInputStream, FileInputStream
+  OutputStream 클래스의 하위 클래스 : FilterOutputStream, FileOutputStream
+  Reader 클래스의 하위 클래스 : InputStreamReader, BufferedReader
+  Writer 클래스의 하위 클래스 : OutputStreamWriter, BufferedWriter, PrintWriter
+
+
+
+
+
+
