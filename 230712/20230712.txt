@@ -1,0 +1,28 @@
+ - HTML5 + CSS3에 대한 전반적인 내용
+
+https://dev.w3.org/html5/html-author/charref
+특수문자나 특수기호에 해당하는 엔티티 코드 제공 사이트
+
+-HTML-
+<blockquote> -> 인용문넣기
+(다른 텍스트보다 안으로 들여써짐)
+<q> -> 인용 내용 표시
+(인용 내용 앞뒤에 따옴표 추가됨)
+<ruby> -> 동아시아 글자에 주석 표시
+<rt>-> ruby안에 사용하면 위에 표시됨
+
+
+
+-CSS-
+https://www.w3.org/Style/CSS/
+
+background-attachment : scroll/fixed
+배경 이미지를 고정하는 속성
+
+srcset??
+
+http://mediaqueri.es -> 미디어쿼리
+
+@media only screen and (max-width:1024px)
+
+
