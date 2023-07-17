@@ -1,0 +1,103 @@
+VMware Workstation Pro의 메뉴얼상 최소 요구사항
+CPU 64비트	 1.3GHZ 이상
+RAM 		 2GB(권장 4GB 이상)
+HDD 		 프로그램 설치를 위해 150MB, 게스트 OS당 별도 공간 필요
+화면 해상도	 1024*768
+권장 호스트 	 OS 64비트용 윈도우 7 이후의 모든 운영체제
+
+가상 서버에 리눅스 설치 및 네트워크와 서버 구축
+1. VMware 설치
+-> https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+
+2. 설치한 VMware를 이용해서 가상머신 4대 생성
+
+내PC 속성
+
+VMware Workstation Player 설정
+
+Create a New Virtual Machine
+맨밑꺼 
+Ubuntu 64
+
+다 만들고 셋팅 -> Processosrs 1로 바꾸기
+CD/DVD -> Connet at power on 체크 상태로 둬야함
+Network Adapter -> Connet at power on, NAT 체크 상태
+
+f2누르면 셋업창으로 이동
+컨트롤+알트 누르면 커서 보이게
+
+진단서
+
+Edit > virtual network editor > change settings > VMnet8 클릭 > Subnet IP 3번째꺼 111로 변경
+
+http://www.freeisocreator.com/
+
+https://old-releases.ubuntu.com/releases -> 20.04.4 LTS -> Desktop image, Server install image
+-> (서버에 필요한것들 )
+
+https://cdimage.ubuntu.com/kubuntu/releases/20.04/release -> kubuntu-20.04.6-desktop-amd64.iso
+-> (클라이언트에 필요한 것)
+
+https://cafe.naver.com/thisisLinux
+
+Server -> 셋팅 -> CD/DVD -> ISO파일 desktop 파일
+
+<----------------리눅스 명령어---------------->
+ID/PW : ubuntu/ubuntu
+
+cd /etc/apt -> 해당위치로 이동
+ls -> 현재 위치 파일들을 보여줌
+sudo mv sources.list sources.list.bak -> A파일 이름을 B로 변경한다.
+                A                B
+sudo wget http://dw.hanbit.co.kr/ubuntu/20.04/sources.list -> A사이트에서 파일 다운로드
+                            A
+sudo apt update
+ip addr -> ip주소 확인
+cd /etc/netplan
+sudo nano 00-installer-config.yaml -> A파일 편집
+		  A
+ens32:
+   dhcp: no
+   addresses: [192.168.111.200/24]
+   gateway4: 192.168.111.2
+   nameservers:
+      addresses: [192.168.111.2]
+
+컨트롤x -> Y -> 엔터 (편집완료)
+
+sudo su - root -> 일반 사용자가 root권한(관리자)을 잠시 빌려 명령을 실행
+passwd -> 비번변경
+reboot -> 재부팅
+ip addr 
+ping -c www.google.com
+
+ufw enable -> 방화벽을 켰음
+apt -y install net-tools 필수 패키지를 설치
+halt -p
+
+----------------------------------------------------------------------------------------------
+Take Snapshot -> 이름 설정완료
+
+Client -> CD: -> Kubuntu파일 
+언어:한국어 , 설치
+업데이트 다운로드 체크해제
+ID/PW : ubuntu/ubuntu
+client
+시작 -> 시스템 설정 -> 디스플레이와 모니터 -> 해상도 1024x768
+-----------------------------------------------------------------------------------------------
+가상 머신 : client 선택
+시작 버튼 -> 터미널 선택
+
+ID/PW : ubuntu/ubuntu
+
+cd /etc/apt -> 해당위치로 이동
+ls -> 현재 위치 파일들을 보여줌
+sudo mv sources.list sources.list.bak -> A파일 이름을 B로 변경한다.
+                A                B
+sudo wget http://dw.hanbit.co.kr/ubuntu/20.04/sources.list -> A사이트에서 파일 다운로드
+                            A
+sudo apt update
+sudo apt -y install net-tools
+
+화면 보호기 끄기
+시작 -> 시스템 설정 -> 전원관리 -> 화면 에너지 절약 체크해제
